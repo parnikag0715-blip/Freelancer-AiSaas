@@ -1,0 +1,8 @@
+{
+  "name": "freelancer Ai Sass",
+  "description": "Production-grade Freelancer AI project intelligence platform for analyzing marketplace project descriptions, extracting entities, public business research, verification, scoring, and generating personalized outreach drafts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
