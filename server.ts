@@ -558,7 +558,7 @@ HARD LIMIT: You have at most 10 code-execution calls for the entire run. Use one
 1. STAGE & SET UP: Create directories, copy the data, and install the core requirements immediately. Do not assume matplotlib is installed:
   mkdir -p ./workspace/data ./workspace/charts ./workspace/data/analysis && \
   cp /.agents/data/*.csv ./workspace/data/ && \
-  pip install -r /.agents/requirements.txt --break-system-packages --prefer-binary --no-cache-dir
+  pip install -r /.agents/python_deps.txt --break-system-packages --prefer-binary --no-cache-dir
   Install scikit-learn separately only if the question genuinely requires an ML model.
 
 
@@ -589,7 +589,7 @@ Example of the required execution order:
 \`\`\`python
 import os
 # Stage data and install core dependencies first
-os.system("mkdir -p ./workspace/data ./workspace/charts ./workspace/data/analysis && cp /.agents/data/*.csv ./workspace/data/ && pip install -r /.agents/requirements.txt --break-system-packages --prefer-binary --no-cache-dir")
+os.system("mkdir -p ./workspace/data ./workspace/charts ./workspace/data/analysis && cp /.agents/data/*.csv ./workspace/data/ && pip install -r /.agents/python_deps.txt --break-system-packages --prefer-binary --no-cache-dir")
 
 
 # Explore and profile using Pandas here, then write ./workspace/data/profile.json directly.

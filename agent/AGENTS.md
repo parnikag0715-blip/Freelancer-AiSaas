@@ -22,7 +22,7 @@ Your first step is to copy those files into `./workspace/data/`. After staging, 
    ```bash
    mkdir -p ./workspace/data ./workspace/charts ./workspace/data/analysis && \
    cp /.agents/data/*.csv ./workspace/data/ && \
-   pip install -r /.agents/requirements.txt --break-system-packages --prefer-binary --no-cache-dir
+   pip install -r /.agents/python_deps.txt --break-system-packages --prefer-binary --no-cache-dir
    ```
    Install scikit-learn separately only when the user's question genuinely requires modeling. Do not install it for descriptive summaries, trends, segmentation, or anomaly review that Pandas can answer.
 
